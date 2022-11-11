@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="createAcc.css"/>
+
+    <title>login page</title>
+</head>
+
+<body>
+    <div class="container">
+    <form class="form" id="form">
+        <h2> Register with us</h2>
+        <div class="form-control">
+            <label for="username">username</label>
+            <input type="text"placeholder='enter name' id="username" required>
+            <small> error mesage</small>
+
+        </div>
+        <div class="form-control">
+            <label for="email">email</label>
+            <input type="email"placeholder='enter email' id="email" 
+                pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required />
+            <small> error mesage</small>
+
+        </div>
+        <div class="form-control">
+            <label for="password">password</label>
+            <input type="text"placeholder='enter password' id="password">
+            <small> error mesage</small>
+
+        </div>
+        <div class="form-control">
+            <label for="password2"> confirm password</label>
+            <input type="text"placeholder='enter password again' id="password2">
+            <small> error mesage</small>
+
+        </div>
+        <button>submit</button>
+    </div>
+    </form>
+    <script src="createAcc.js"></script>
+</body>
+</html>
